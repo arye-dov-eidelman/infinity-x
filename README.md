@@ -21,23 +21,22 @@
 <a name="module_infinity-x"></a>
 
 ## infinity-x
+
 The constant value Infinity.
 
-**Version**: 1.0.2  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
 <a name="exp_module_infinity-x--module.exports"></a>
 
 ### `module.exports` : <code>number</code> ⏏
+
 The constant value Infinity derived mathematically by 1 / 0.
 
 **Kind**: Exported member  
-**Example**  
-```js
-var INFINITY = require('infinity-x');
+**Example**
 
-INFINITY === Infinity; // true
--INFINITY === -Infinity; // true
-INFINITY === -Infinity; // false
+```js
+import INFINITY from 'infinity-x';
+
+console.log(INFINITY === Infinity); // true
+console.log(-INFINITY === -Infinity); // true
+console.log(INFINITY === -Infinity); // false
 ```
