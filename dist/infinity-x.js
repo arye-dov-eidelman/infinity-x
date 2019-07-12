@@ -1,13 +1,14 @@
 /*!
 {
+  "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-07-10T13:10:43.756Z",
+  "date": "2019-07-12T12:39:58.676Z",
   "describe": "",
   "description": "The constant value Infinity.",
   "file": "infinity-x.js",
-  "hash": "96ea96725010876622d7",
+  "hash": "1cf5a9f5e9548c74d2a4",
   "license": "MIT",
-  "version": "2.0.0"
+  "version": "2.0.1"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -124,24 +125,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
+__webpack_require__.r(__webpack_exports__);
 /**
  * The constant value Infinity derived mathematically by 1 / 0.
  *
  * @type number
  */
-var _default = 1 / 0;
+/* harmony default export */ __webpack_exports__["default"] = (1 / 0);
 
-exports.default = _default;
+
 
 /***/ })
 /******/ ]);

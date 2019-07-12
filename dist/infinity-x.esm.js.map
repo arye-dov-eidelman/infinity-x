@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/infinity-x.js"],"names":[],"mappings":"AAAA;;;;;AAKA,eAAe,IAAI,CAAnB","file":"infinity-x.esm.js","sourcesContent":["/**\n * The constant value Infinity derived mathematically by 1 / 0.\n *\n * @type number\n */\nexport default 1 / 0;\n"]}
