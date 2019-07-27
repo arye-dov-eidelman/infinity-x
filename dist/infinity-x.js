@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-07-27T00:08:38.309Z",
+  "date": "2019-07-27T13:09:58.926Z",
   "describe": "",
   "description": "The constant value Infinity.",
   "file": "infinity-x.js",
   "hash": "1cf5a9f5e9548c74d2a4",
   "license": "MIT",
-  "version": "2.0.27"
+  "version": "2.0.28"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
