@@ -3,4 +3,6 @@
  *
  * @type number
  */
-export default 1 / 0;
+const constantInfinity = 1 / 0;
+
+export default constantInfinity;

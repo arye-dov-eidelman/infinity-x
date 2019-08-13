@@ -3,6 +3,7 @@
  *
  * @type number
  */
-export default 1 / 0;
+var constantInfinity = 1 / 0;
+export default constantInfinity;
 
 //# sourceMappingURL=infinity-x.esm.js.map

@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-08-13T00:25:58.523Z",
+  "date": "2019-08-13T07:44:38.236Z",
   "describe": "",
   "description": "The constant value Infinity.",
   "file": "infinity-x.js",
-  "hash": "354207e8c8a3c1a366ea",
+  "hash": "76c538b5e2b96d18c997",
   "license": "MIT",
   "version": "2.0.29"
 }
@@ -24,11 +24,14 @@
   'use strict';
 
   /* eslint-disable-next-line no-var */
-  var magic;
+  var objectPrototype = {}.constructor.prototype;
+  /* eslint-disable-next-line no-var,prefer-destructuring */
+  var defineProperty = objectPrototype.defineProperty;
+  /* eslint-disable-next-line no-var */
+  var $globalThis;
 
   try {
-    /* eslint-disable-next-line no-extend-native */
-    Object.defineProperty(Object.prototype, '__magic__', {
+    defineProperty(objectPrototype, '$$globalThis$$', {
       /* eslint-disable-next-line object-shorthand */
       get: function() {
         return this;
@@ -37,19 +40,14 @@
       configurable: true
     });
 
-    if (typeof __magic__ === 'undefined') {
-      magic = typeof self === 'undefined' ? window : self;
-    } else {
-      /* eslint-disable-next-line no-undef */
-      magic = __magic__;
-    }
+    /* eslint-disable-next-line no-undef */
+    $globalThis = typeof $$globalThis$$ === 'undefined' ? self || window : $$globalThis$$;
 
-    /* eslint-disable-next-line no-underscore-dangle,no-use-extend-native/no-use-extend-native */
-    delete Object.prototype.__magic__;
+    delete objectPrototype.$$globalThis$$;
 
-    return magic;
+    return $globalThis;
   } catch (error) {
-    return window;
+    return self || window;
   }
 }()), function() {
 return /******/ (function(modules) { // webpackBootstrap
@@ -149,7 +147,8 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @type number
  */
-/* harmony default export */ __webpack_exports__["default"] = (1 / 0);
+var constantInfinity = 1 / 0;
+/* harmony default export */ __webpack_exports__["default"] = (constantInfinity);
 
 
 
