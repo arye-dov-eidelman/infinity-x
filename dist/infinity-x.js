@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017-present",
-  "date": "2019-09-05T18:21:59.561Z",
+  "date": "2020-01-30T11:08:28.886Z",
   "describe": "",
   "description": "The constant value Infinity.",
   "file": "infinity-x.js",
