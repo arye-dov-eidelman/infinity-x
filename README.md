@@ -67,7 +67,7 @@ console.log(INFINITY === -Infinity); // false
 
 Alternatively this can be used as a zero install package,
 without adding anything to your package.json.
-This option improved performance in all areas,
+This option improves performance in all areas,
 including but not limited to: install times, build times, bundle size, execution time.
 
 ```js
